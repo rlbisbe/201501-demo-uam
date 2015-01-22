@@ -11,6 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUAM.Windows", "DemoUAM\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUAM.WindowsPhone", "DemoUAM\DemoUAM.WindowsPhone\DemoUAM.WindowsPhone.csproj", "{06ADE316-BB87-4B88-AFD0-7523A556A48A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{8B9CF750-74C3-48AB-AD45-F5E53C0CAC9B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{B75C8D7A-8A82-43E0-A5FC-4A4D50EE7F08}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\API-WAWS-dev.json = PublishScripts\Configurations\API-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		DemoUAM\DemoUAM.Shared\DemoUAM.Shared.projitems*{e12f9313-457e-44d7-aaa7-30b08302653e}*SharedItemsImports = 4
@@ -72,6 +85,16 @@ Global
 		{06ADE316-BB87-4B88-AFD0-7523A556A48A}.Release|x86.ActiveCfg = Release|x86
 		{06ADE316-BB87-4B88-AFD0-7523A556A48A}.Release|x86.Build.0 = Release|x86
 		{06ADE316-BB87-4B88-AFD0-7523A556A48A}.Release|x86.Deploy.0 = Release|x86
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC6B77AF-5D60-4798-AB9C-EC2A341422E7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +103,6 @@ Global
 		{2B64F6FC-190E-477D-B5EA-3EB5ADFEA8AA} = {6653285C-29E2-4BA0-8654-D477E0E9FE48}
 		{E12F9313-457E-44D7-AAA7-30B08302653E} = {6653285C-29E2-4BA0-8654-D477E0E9FE48}
 		{06ADE316-BB87-4B88-AFD0-7523A556A48A} = {6653285C-29E2-4BA0-8654-D477E0E9FE48}
+		{B75C8D7A-8A82-43E0-A5FC-4A4D50EE7F08} = {8B9CF750-74C3-48AB-AD45-F5E53C0CAC9B}
 	EndGlobalSection
 EndGlobal
