@@ -14,6 +14,7 @@ namespace Emailer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Using connection:" + ConfigurationManager.ConnectionStrings["TaskConnectionString"]);
             var db = new TaskContext();
             var result = new StringBuilder();
             var templatePath = @"Template\MailTemplate.html";
