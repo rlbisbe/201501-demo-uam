@@ -10,5 +10,10 @@ namespace API.DAL
     public class TaskContext : DbContext
     {
         public DbSet<TaskModel> Tasks { get; set; }
+
+        public TaskContext() : base("TaskConnectionString")
+        {
+
+        }
     }
 }
